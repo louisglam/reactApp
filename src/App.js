@@ -5,18 +5,18 @@ import './App.css';
 
 
 class App extends React.Component{
-    // constructor(){
-    //   super();
-    //   this.state = { color : "red" };
+    constructor(props){
+      super(props);
+      this.state = { color : "red" };
 
-    // }
+    }
 
-    render(props){
+    render(){
       return <h2>Hello,{this.props.color} App</h2>
     }
 }
 
-ReactDOM.render(<App color="red"/>, document.getElementById('root'));
+// ReactDOM.render(<App color="red"/>, document.getElementById('root'));
 
 
 export default App;
